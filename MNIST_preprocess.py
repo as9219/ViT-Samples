@@ -71,7 +71,7 @@ class MNISTsubmit(Dataset):
     
 
 
-def MNIST_preprocess_data(self, train_csv, test_csv, random_seed):
+def MNIST_preprocess_data(train_csv, test_csv, random_seed):
     train_df = pd.read_csv(train_csv)
     test_df = pd.read_csv(test_csv)
     train_df, val_df = train_test_split(train_df, test_size=0.1, random_state=random_seed, shuffle=True)
